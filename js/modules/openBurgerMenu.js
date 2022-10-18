@@ -19,11 +19,14 @@ function openBurgerMenu(burgerSelector, menuSelector, crossSelector, linkSelecto
     }
 
     menu.addEventListener('click', (e) => {
-        links.forEach((link) => {
-            if (e.target == link) {
-                close();
-            }
-        })
+        if (document.documentElement.clientWidth < 770) {
+            links.forEach((link) => {
+                if (e.target == link) {
+                    close();
+                }
+            })
+        }
+
     });
 
     cross.addEventListener('click', () => {
