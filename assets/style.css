@@ -367,6 +367,7 @@ hr {
 
 .about__item:hover .about__text {
     opacity: 1;
+    transform: translate3d(-10px, -10px, 0)
 }
 
 .about__info {
@@ -656,11 +657,13 @@ hr {
 .reviews__btn--prev {
     left: 0;
     transform: rotate(-45deg);
+    cursor: pointer;
 }
 
 .reviews__btn--next {
     right: 0;
     transform: rotate(135deg);
+    cursor: pointer;
 }
 
 
@@ -937,14 +940,15 @@ hr {
     text-transform: uppercase;
 }
 
+.map__title div {
+    padding-bottom: 10px;
+}
+
 .map__title a {
     color: inherit;
     text-decoration: none;
 }
 
-.map__title a:hover {
-    text-decoration: underline;
-}
 
 .map__title:after {
     content: "";
@@ -1113,6 +1117,7 @@ hr {
 .blogs__img {
     width: 120px;
     height: 80px;
+    cursor: pointer;
 }
 
 .blogs__content {
@@ -1551,6 +1556,7 @@ hr {
 
     .reviews__btn {
         top: 18%;
+        cursor: pointer;
     }
 
     /*    Works*/

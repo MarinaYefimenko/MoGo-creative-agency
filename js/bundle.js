@@ -35,10 +35,11 @@ function accordion(itemsSelector, headersSelector, parentSelector) {
     showAccordItems();
 
     accordParent.addEventListener('click', (event) => {
-        if (event.target && event.target.classList.contains('accord__header')) {
+        console.log(event.target);
+        if (event.target && (event.target.classList.contains('accord__header') || event.target.classList.contains('accord__title'))) {
             hideAccordItems();
             accordHeaders.forEach((item, i) => {
-                if (event.target == item) {
+                if (event.target == item || event.target == item.querySelector('.accord__title')) {
                     toggleAccordItems(i);
                 }
             })
